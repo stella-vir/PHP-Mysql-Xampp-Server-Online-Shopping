@@ -1,0 +1,15 @@
+/* @import url(
+'https://fonts.gstatic.com/s/poppins/v19/pxiByp8kv8JHgFVrLCz7Z11lFd2JQEl8qw.woff2'
+  ); */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  /* no small lines at the end of the strokes */
+  font-weight: 400;
+  background-color: ivory;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+}
