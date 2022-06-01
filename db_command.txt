@@ -1,0 +1,13 @@
+below all can be lowercases:
+
+CREATE USER 'user1'@'localhost' IDENTIFIED BY 'password';
+CREATE USER 'user1'@'172.20.10.3' IDENTIFIED BY 'password';
+
+create database testdb;
+GRANT ALL PRIVILEGES ON testdb.* TO 'user1'@'localhost';
+# '%' is the wildcard for any host, however the firewall could block it.
+# GRANT ALL PRIVILEGES ON testdb.* TO 'user1'@'172.20.10.3';
+flush privileges;
+
+use testdb;
+CREATE TABLE customers (fname VARCHAR(255), lname VARCHAR(255));
