@@ -1,0 +1,15 @@
+<!-- A bit late, but here's the assignment from last class, had a hard time letting the html page recognize the pic path, lol.
+/templates/hello.html -->
+<html>
+  <head>
+    <title>Flask Exercise</title>
+  </head>
+  <body>
+    <h1>See texts and pictures.</h1>
+    <p>Here're the attached pics:</p>
+    <img src="static/images/freshwater_fish.jpg" alt='Fish'></img>
+    <!-- <img src="file:///../../../../../Users/Stella/Desktop/project_x/static/images/wp9221205.jpg"> -->
+    <img src="https://media.istockphoto.com/vectors/freshwater-fish-set-vector-id679434592?s=170667a" alt="Freshwater Fish" height='500' width='500'>
+    <img src="{{url_for('static', filename = 'images/wp9221205.jpg')}}" alt='Earth'height='500' width='1000'/></img>
+    </body>
+</html>
